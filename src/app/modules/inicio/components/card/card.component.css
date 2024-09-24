@@ -29,3 +29,21 @@ ul li{
     list-style: none;
 }
 
+.imagen{
+    display: flex;
+
+    margin: 0.5rem;
+    filter: brightness(0.2);
+
+    transition: transform 0.1s;
+}
+
+.imagen:hover{
+    filter: brightness(0.6);
+
+}
+
+.imagen:hover+*{
+    filter: brightness(0.1);
+}
+
