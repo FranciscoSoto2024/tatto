@@ -1,0 +1,45 @@
+<mat-toolbar>
+    <button id="menuSecciones" mat-icon-button class="example-icon" [matMenuTriggerFor]="seccion" >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #seccion="matMenu">
+      <button mat-button routerLink="/inicio">Inicio</button>
+      <button mat-menu-item [matMenuTriggerFor]="producto">Productos</button>
+    </mat-menu>
+
+    <img src="../../../../../assets/Gaming.png" alt="">
+    <!-- se van a mostrar cuando la pantalla sea mayor a 700px -->
+    <!-- boton para la vista de inicio -->
+    <!-- Botón para la vista de Inicio -->
+    <button id="menuProducto" mat-button routerLink="/inicio">Inicio</button>
+
+    <!-- Menu desplegable -> PRODUCTOS -->
+    <button id="menuInicio" mat-button [matMenuTriggerFor]="producto">Productos</button>
+    <mat-menu #producto="matMenu">
+        <button mat-menu-item routerLink="/producto">General</button>
+        <button mat-menu-item routerLink="/alimentacion">Alimentación</button>
+        <button mat-menu-item routerLink="/indumentaria">Indumentaria</button>
+        <button mat-menu-item routerLink="/juguetes">Juguetes</button>
+    </mat-menu>
+
+    <span class="example-spacer"></span>
+
+    <!-- Inicio de sesión y el Registro de un nuevo usuario -->
+    <!-- menu desplegable para manejar todo el acceso de los -->
+    <button mat-icon-button [matMenuTriggerFor]="usuario"><mat-icon>person</mat-icon></button>
+    <mat-menu #usuario="matMenu">
+        <button mat-menu-item (click)="ingresar()" *ngIf="logueado" routerLink="/registro">Registrarse</button>
+        <button mat-menu-item (click)="ingresar()" *ngIf="logueado" routerLink="/inicio-sesion">Iniciar Sesión</button>
+        <button mat-menu-item (click)="cerrarSesion()" *ngIf="deslogueado">Cerrar Sesion</button>
+    </mat-menu>
+
+    <!-- Carrito -->
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>shopping_cart</mat-icon>
+    </button>
+
+    <!--Label para modo oscuro-->
+    <label for="toggle" id="label_toggle"><i class="fa-solid fa-moon"></i></label>
+    <input type="checkbox" id="toggle" (click)="cambiarFondo()">
+
+</mat-toolbar>
