@@ -70,7 +70,7 @@ export class CardComponent {
     nombre:"Blackwork",
     estilo: "Blackwork", 
     origen: "",
-    edad: 400,
+    edad: 40,
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMCiBou-J_VPOvbcuwhrSkZoSjn6Pt_m-kzg&s",
     descripcion: "El estilo de tatuaje blackwork se caracteriza por el uso de tinta negra para crear diseños audaces y llamativos. Este enfoque puede incluir patrones geométricos, ilustraciones detalladas, sombras y figuras abstractas,A menudo, el blackwork juega con el contraste, utilizando áreas de negro sólido para resaltar otras formas o elementos,on apreciados por su estética minimalista", 
     alt:""
@@ -115,6 +115,57 @@ export class CardComponent {
     descripcion: "El ignorant style (el peor estilo para mi) es un enfoque de tatuaje que se caracteriza por su estética deliberadamente sencilla, a menudo con un toque de humor o ironía,Utiliza líneas gruesas y formas básicas, a menudo con un acabado rudimentario. Los diseños pueden parecer hechos a mano o sin mucha precisión técnica ya que La falta de detalles elaborados.", 
     alt:""
     },
+    {
+      id: "11",
+    nombre:"Trash polka",
+    estilo: "", 
+    origen: "",
+    edad: 20,
+    imagen: "https://avantgardetattoo.es/wp-content/uploads/2022/06/WIZINK-portfolio_003-scaled.jpg",
+    descripcion: "El estilo Trash Polka tiene sus orígenes en Alemania, en un centro llamado Buena Vista Tattoo y fue creado por Simone Plaff y Volko Mershcky, quienes lo consideran una fusión de “realismo y basura”. Es un estilo que combina lo misterioso con lo dramático,El Trash Polka combina tintas en color negro y rojo para crear los efectos de misterio y profundidad en las imágenes.", 
+    alt:""
+    },
+    {
+      id: "12",
+    nombre:"Cyber-sigilism",
+    estilo: "", 
+    origen: "",
+    edad: 10,
+    imagen: "https://i.pinimg.com/236x/78/29/44/782944b627627af1f288cb2eb1f17597.jpg",
+    descripcion: "El Cyber Sigilism es un estilo de tatuaje futurista y vanguardista que fusiona elementos digitales, geométricos y esotéricos. Es una mezcla de ciberpunk y simbolismo místico, con un enfoque en formas abstractas, patrones complejos y líneas minimalistas, que evocan tecnología,el ciberespacio y los rituales simbólicos,Aunque la mayoría de los tatuajes en este estilo suelen ser en tinta negra, también se pueden incorporar tonos vibrantes o neones,", 
+    alt:""
+    },
+    {
+      id: "13",
+    nombre:"Ignorant style",
+    estilo: "", 
+    origen: "",
+    edad: 25,
+    imagen: "https://i.pinimg.com/736x/3b/bd/97/3bbd978938a93a5fcb96648a414c96e0.jpg",
+    descripcion: "El ignorant style (el peor estilo para mi) es un enfoque de tatuaje que se caracteriza por su estética deliberadamente sencilla, a menudo con un toque de humor o ironía,Utiliza líneas gruesas y formas básicas, a menudo con un acabado rudimentario. Los diseños pueden parecer hechos a mano o sin mucha precisión técnica ya que La falta de detalles elaborados.", 
+    alt:""
+    },
+    {
+      id: "10",
+    nombre:"Ignorant style",
+    estilo: "", 
+    origen: "",
+    edad: 25,
+    imagen: "https://i.pinimg.com/736x/3b/bd/97/3bbd978938a93a5fcb96648a414c96e0.jpg",
+    descripcion: "El ignorant style (el peor estilo para mi) es un enfoque de tatuaje que se caracteriza por su estética deliberadamente sencilla, a menudo con un toque de humor o ironía,Utiliza líneas gruesas y formas básicas, a menudo con un acabado rudimentario. Los diseños pueden parecer hechos a mano o sin mucha precisión técnica ya que La falta de detalles elaborados.", 
+    alt:""
+    },
+    {
+      id: "10",
+    nombre:"Ignorant style",
+    estilo: "", 
+    origen: "",
+    edad: 25,
+    imagen: "https://i.pinimg.com/736x/3b/bd/97/3bbd978938a93a5fcb96648a414c96e0.jpg",
+    descripcion: "El ignorant style (el peor estilo para mi) es un enfoque de tatuaje que se caracteriza por su estética deliberadamente sencilla, a menudo con un toque de humor o ironía,Utiliza líneas gruesas y formas básicas, a menudo con un acabado rudimentario. Los diseños pueden parecer hechos a mano o sin mucha precisión técnica ya que La falta de detalles elaborados.", 
+    alt:""
+    },
+    
   ]
    }
 
