@@ -13,6 +13,7 @@ import { environment } from 'src/environments/environment'; // vincula a la BD c
 import { AngularFireModule } from '@angular/fire/compat'; // trabaja con las colecciones de información
 import { AngularFireAuthModule } from '@angular/fire/compat/auth'; // trabaja con la autentificación
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { ProductoModule } from './modules/producto/producto.module';
 // trabaja con imágenes y archivos
 
 /**
@@ -33,7 +34,7 @@ import { AngularFireStorageModule } from '@angular/fire/compat/storage';
     // VINCULACIÓN CON FIREBASE
     AngularFireModule.initializeApp(environment.firebaseConfig), // Inicializar Firebase dentro del proyecto
     AngularFireAuthModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
   ],
 
   providers: [],

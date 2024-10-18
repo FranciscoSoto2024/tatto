@@ -7,5 +7,6 @@ export interface Tattoo {
     imagen: string;
     descripcion: string;
     alt:string;
+    ruta:string;
 }
     

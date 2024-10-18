@@ -11,6 +11,10 @@
       "prefix": "app",
       "architect": {
         "build": {
+          "allowedCommonJsDependencies": [
+            "crypto-js",
+            "sweetalert2"
+          ], 
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/primer-proyecto24",

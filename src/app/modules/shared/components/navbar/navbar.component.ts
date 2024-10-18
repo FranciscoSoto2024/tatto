@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter  } from '@angular/core';
 import { AuthService } from 'src/app/modules/autentificacion/services/auth.service';
 import { Router } from '@angular/router';
 
@@ -10,6 +10,8 @@ import { Router } from '@angular/router';
 export class NavbarComponent {
   logueado = true; //booleana para manejo de registro y el inicio de sesion 
   deslogueado = false; // booleana para manejo de cierre sesion  
+  @Output() buscarTermino = new EventEmitter<string>(); // Emitir término de búsqueda
+
 
 
   constructor(
@@ -50,4 +52,11 @@ cambiarFondo(){
     }
   }
 }
+
+//Busqueda
+buscar(event: Event) {
+  const input = event.target as HTMLInputElement;
+  this.buscarTermino.emit(input.value); // Emitir el término de búsqueda
+}
+
 }

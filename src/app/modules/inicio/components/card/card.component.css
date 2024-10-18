@@ -1,15 +1,31 @@
+/*Estilos generales*/
 .container{
     display: flex;
-    position: center;
     padding: 10px;
     justify-content: space-around;
     margin: 0;
 }
 
+.row{
+  flex-direction: row;
+}
+/*Posicion de las cards*/
+.col{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Tamaño de las imagenes de las cards */
 img{
     width: 220px;
     height: 220px;
 }
+
+.Favorito{
+  display: flex;
+}
+
 
 
 .contenido{
@@ -19,8 +35,6 @@ img{
     border-radius: 15px;
     margin: 30px;
     justify-content: left;
-    flex-direction: row;
-
 }
 
 p{
@@ -58,13 +72,6 @@ ul li{
   width: 0;
 }
 
-.container {
-  display: block;
-  position: relative;
-  cursor: pointer;
-  user-select: none;
-}
-
 .container svg {
   position: relative;
   top: 0;
@@ -82,6 +89,17 @@ ul li{
 .container input:checked ~ svg {
   fill: #080808;
 }
+
+.div{
+  cursor: crosshair;
+}
+
+/*Cambio del cursor sobre el parrafo*/
+.p-texto{
+  cursor: context-menu;
+  cursor: text;
+}
+
 
 
 

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Producto } from 'src/app/models/producto';
+import { Publicacion } from 'src/app/models/Publicacion';
 import { CrudService } from 'src/app/modules/admin/services/crud.service';
 @Component({
   selector: 'app-card-alimentacion',
@@ -17,14 +18,15 @@ export class CardAlimentacionComponent {
   modalVisible: boolean = false;
   //Variable para seleccionar un producto en especifico
   productoSeleccionado!: Producto;
+  coleccionPublicacion:Publicacion[]=[]
 
   
   //patentamos de forma local el servicio para acceder a el
   constructor(public servicioCrud: CrudService){}
 
   ngOnInit():void{
-    this.servicioCrud.obtenerProducto().subscribe(producto => {
-      this.coleccionProductos = producto;
+    this.servicioCrud.obtenerPublicaciones().subscribe(publicacion => {
+      this.coleccionPublicacion = publicacion;
     })
 
     this.mostrarProductoAlimentacion();

@@ -1,6 +1,7 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { Producto } from 'src/app/models/producto';
 import { CrudService } from 'src/app/modules/admin/services/crud.service';
+import { Publicacion } from 'src/app/models/Publicacion';
+
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
@@ -8,36 +9,38 @@ import { CrudService } from 'src/app/modules/admin/services/crud.service';
 })
 export class CardComponent {
   //Definimos coleccion de productos locales
-  coleccionProductos: Producto[] = [];
+  coleccionPublicacion: Publicacion[] = [];
   // Variable local para seleccionar un producto especifico
-  productoSeleccionado!: Producto;
+  publicacionFiltrados: Publicacion[] = []; // Array para los productos filtrados
   // Variable local para menejar estado de un modal
   modalVisible: boolean = false;
   //booleano para manejar la visibilidad de "ultima compra" 
   compraVisible:boolean = false;
   //Directivas para comunicarse con el componente padre
-  @Input() productoReciente: string = '';
+  @Input() publicacionReciente: string = '';
 
-  @Output() productoAgregado = new EventEmitter <Producto>(); //@Output
+  @Output() publicacionAgregado = new EventEmitter<Publicacion>(); //@Output
+  publicacionSeleccionado!: Publicacion;
+  
 
 constructor(public sevicioCrud: CrudService){}
 
 ngOnInit(): void{
-  this.sevicioCrud.obtenerProducto().subscribe(producto => {
-    this.coleccionProductos = producto;
+  this.sevicioCrud.obtenerPublicaciones().subscribe(publicacion => {
+    this.coleccionPublicacion = publicacion;
   })
 }
 
 //Funcion para mostrar mas informacion de los productos
-mostrarVer(info:Producto){
+mostrarVer(info:Publicacion){
   //Cambio estado del modal a true (ahora es visible)
   this.modalVisible = true
   //Guardo en variable seleccionado la informacion del producto elegido 
-  this.productoSeleccionado = info;
+  this.publicacionSeleccionado = info;
 }
 
-agregarProducto(info : Producto){
-  this.productoAgregado.emit(info);
+agregarPublicacion(info : Publicacion){
+  this.publicacionAgregado.emit(info);
 
   this.compraVisible = true;
 }

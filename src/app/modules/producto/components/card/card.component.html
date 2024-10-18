@@ -6,21 +6,21 @@
         <ul class="list-group">
           <h3>Ultima compra:</h3>
           <li class="list-group-item">
-            {{productoReciente}}
+            {{publicacionReciente}}
           </li>
         </ul>
       </div>
     </div>
   </div>
   <!--Card para mostrar TODOS los productos que el admin ingrese a la base de datos-->
-  <div class="col" *ngFor="let producto of coleccionProductos">
+  <div class="col" *ngFor="let publicacion of coleccionPublicacion">
     <div class="card" style="width: 18rem;">
-      <img src="{{producto.imagen}}" class="card-img-top" alt="{{producto.alt}}">
+      <img src="{{publicacion.imagen}}" class="card-img-top" alt="{{publicacion.alt}}">
       <div class="card-body">
-        <h5 class="card-title">{{producto.imagen}}</h5>
-        <p class="card-text">{{producto.precio}}</p>
+        <h5 class="card-title">{{publicacion.imagen}}</h5>
+        <p class="card-text">{{publicacion.Numero}}</p>
         ><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#verMas"
-          (click)="mostrarVer(producto)">Ver mas</button>
+          (click)="mostrarVer(publicacion)">Ver mas</button>
       </div>
     </div>
   </div>
@@ -38,20 +38,20 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <img src="{{productoSeleccionado.imagen}}" alt="{{productoSeleccionado.alt}}">
+        <img src="{{publicacionSeleccionado.imagen}}" alt="{{publicacionSeleccionado.Numero}}">
 
         <div class="mb-3">
-          {{productoSeleccionado.descripcion}}
         </div>
 
         <div class="mb-3">
-          {{productoSeleccionado.precio}}
+          {{publicacionSeleccionado.Calificacion}}
+          {{publicacionSeleccionado.Comentario}}
         </div>
 
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal"
-          (click)="agregarProducto(productoSeleccionado)">Agregar</button>
+          (click)="agregarPublicacion(publicacionSeleccionado)">Agregar</button>
         <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
       </div>
     </div>

@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { Publicacion } from 'src/app/models/Publicacion';
-import Swal from "sweetalert2" 
+import Swal from 'sweetalert2';
+
 @Component({
-  selector: 'app-producto',
-  templateUrl: './producto.component.html',
-  styleUrls: ['./producto.component.css']
+  selector: 'app-carrusel',
+  templateUrl: './carrusel.component.html',
+  styleUrls: ['./carrusel.component.css']
 })
-export class ProductoComponent {
+export class CarruselComponent {
   pub:string = '';
 
   //Coleccion de productos añadidos a la fiesta
@@ -38,3 +39,4 @@ export class ProductoComponent {
     }
   }
 }
+
