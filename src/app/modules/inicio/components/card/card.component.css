@@ -1,107 +1,118 @@
-/*Estilos generales*/
-.container{
-    display: flex;
-    padding: 10px;
-    justify-content: space-around;
-    margin: 0;
+h2 {
+    color: white; /* Establece el color del texto del título en blanco. */
+    text-align: center; /* Centra el texto horizontalmente dentro de su contenedor. */
 }
 
-.row{
-  flex-direction: row;
+.container {
+    display: flex; /* Usa el modelo de caja flexible para alinear y distribuir los elementos hijos (como tarjetas) dentro del contenedor. */
+    padding: 10px; /* Agrega un espacio de 10px alrededor del contenido del contenedor. */
 }
-/*Posicion de las cards*/
-.col{
+
+img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor padre. */
+    height: 400px; /* Establece una altura fija de 400px para la imagen. */
+}
+
+p {
+    margin: 5px; /* Aplica un margen de 5px alrededor de los párrafos. */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Para que las tarjetas se ajusten cuando haya muchas */
+  justify-content: space-around;
+  padding: 10px;  
+}
+
+.container {
+  display: flex; /* Usa el modelo de caja flexible para alinear y distribuir los elementos hijos (como tarjetas) dentro del contenedor. */
+  padding: 10px; /* Agrega un espacio de 10px alrededor del contenido del contenedor. */
+}
+
+
+.contenido {
+  width: 350px;
+  min-height: 450px; /* Establece un alto mínimo para que no cambie al agregar o quitar texto */
+  display: inline-block;
+  padding: 0.5%;
+  border-radius: 8px;
+  margin: 10px;
+  border: 1px solid #ffffff;
+  box-shadow: 0 10px 10px white;
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden; /* Para manejar cualquier desbordamiento del contenido */
+}
+
+.contenido:hover {
+  transform: translateY(-10px); /* Mueve el contenido hacia arriba 10px cuando el usuario pasa el cursor sobre él. */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Cambia la sombra a una más pequeña y suave cuando el contenido está en hover. */
+}
+
+
+p {
+  padding: 5px;
   margin: 0;
+}
+
+
+.card {
+  width: 95%; /* Establece que la tarjeta ocupará el 95% del ancho disponible. */
+  max-width: 400px; /* Define un ancho máximo de 400px para evitar que la tarjeta crezca demasiado. */
+  margin: 5px auto; /* Aplica márgenes automáticos para centrar la tarjeta y un espacio de 5px alrededor. */
+  border-radius: 12px; /* Redondea las esquinas de la tarjeta con un radio de 12px. */
+  overflow: hidden; /* Evita que el contenido se desborde fuera de los límites de la tarjeta. */
+  border: 1px solid rgb(255, 255, 255); /* Aplica un borde blanco sólido de 1px. */
   display: flex;
-  flex-direction: column;
-}
-
-/*Tamaño de las imagenes de las cards */
-img{
-    width: 220px;
-    height: 220px;
-}
-
-.Favorito{
-  display: flex;
-}
-
-
-
-.contenido{
-    width: 200px;
-    display: flex;
-    padding: 15px;
-    border-radius: 15px;
-    margin: 30px;
-    justify-content: left;
-}
-
-p{
-    padding: 10px;
-}
-
-ul li{
-    list-style: none;
-}
-
-.imagen{
-    display: flex;
-
-    margin: 0.5rem;
-    filter: brightness(0.2);
-
-    transition: transform 0.1s;
-}
-
-.imagen:hover{
-    filter: brightness(0.6);
-
-}
-
-.imagen:hover+*{
-    filter: brightness(0.1);
-}
-
-/* From Uiverse.io by andrew-demchenk0 */ 
-.container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-.container svg {
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 50px;
-  width: 50px;
-  transition: all 0.3s;
-  fill: #666;
-}
-
-.container svg:hover {
-  transform: scale(1.1);
-}
-
-.container input:checked ~ svg {
-  fill: #080808;
-}
-
-.div{
-  cursor: crosshair;
-}
-
-/*Cambio del cursor sobre el parrafo*/
-.p-texto{
-  cursor: context-menu;
-  cursor: text;
-}
-
-
-
-
+  flex-direction: column; /* Organiza el contenido de la tarjeta en una disposición vertical. */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Agrega una sombra más ligera en comparación con el estilo de contenido. */
+  transition: transform 0.3s, box-shadow 0.3s; /* Define una transición suave para la transformación y la sombra cuando se hace hover. */
   
+}
 
+.card-body {
+  padding: 20px; /* Agrega un relleno de 20px alrededor del cuerpo de la tarjeta. */
+  background-color: #f9f9f9; /* Establece un color de fondo claro para el cuerpo de la tarjeta. */
+  flex-grow: 1; /* Permite que el cuerpo crezca ocupando el espacio disponible. */
+  max-height: 500px; /* Define una altura máxima de 500px para el contenido del cuerpo de la tarjeta. */
+  overflow-y: auto; /* Permite el desplazamiento vertical si el contenido sobrepasa la altura máxima. */
+}
+
+
+/* Ajuste de altura mínima para pantallas más pequeñas */
+@media (max-width: 900px) {
+  .contenido {
+    min-height: 400px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 700px) {
+  .contenido {
+    width: 100%; /* Para que ocupe todo el ancho en pantallas pequeñas */
+    min-height: 350px;
+  }
+}
+
+@media (min-width: 700px) {
+  .contenido {
+    min-height: 450px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+  /* Estilos que se aplican para pantallas pequeñas (entre 300px y 700px de ancho). */
+  .container {
+      display: flex;
+      flex-direction: column; /* Coloca los elementos hijos (tarjetas) en una columna vertical. */
+      align-items: center; /* Centra horizontalmente los elementos hijos dentro del contenedor. */
+  }
+}
+
+
+@media (min-width: 700px) {
+  /* Los estilos dentro de este bloque se aplicarían para pantallas con un ancho mayor a 700px, pero está vacío, por lo que no tiene efecto actualmente. */
+}
+
+#boton {
+  border: 1px solid #000000;
+  margin-top: 10px;
+}

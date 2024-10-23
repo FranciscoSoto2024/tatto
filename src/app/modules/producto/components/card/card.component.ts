@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CrudService } from 'src/app/modules/admin/services/crud.service';
-import { Publicacion } from 'src/app/models/Publicacion';
+import { Publicacion } from 'src/app/models/publicacion';
 
 @Component({
   selector: 'app-card',

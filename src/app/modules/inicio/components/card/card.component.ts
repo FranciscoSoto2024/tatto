@@ -152,7 +152,7 @@ export class CardComponent {
     origen: "",
     edad: 25,
     imagen: "https://zbcscrwjqlygjzrqvdcu.supabase.co/storage/v1/object/public/tattoox/faef744f-3a6c-4118-9930-a7915fd84b4c/c2e69011-368e-4129-b1b3-4c2fe8577527.image",
-    descripcion: "El tatuaje estilo neo tradicional es una evolución moderna del tatuaje tradicional, que combina elementos clásicos con detalles más elaborados y técnicas avanzadas. Se caracteriza por líneas audaces y bien definidas, similares a las del estilo tradicional, pero con mayor fluidez y dinamismo,Utiliza colores vibrantes incorporando degradados y sombras que aportan profundidad y volumen y le da un aspecto tridimensional.", 
+    descripcion: "El tatuaje estilo neo tradicional es una evolución moderna del tatuaje tradicional, que combina elementos clásicos con detalles más elaborados y técnicas avanzadas. Se caracteriza por líneas audaces y bien definidas, similares a las del estilo tradicional, pero con mayor fluidez y dinamismo,Utiliza colores vibrantes incorporando degradados y sombras que aportan profundidad y volumen aspecto tridimensional.", 
     alt:"",
     ruta:""
     },

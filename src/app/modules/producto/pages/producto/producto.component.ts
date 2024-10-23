@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Publicacion } from 'src/app/models/Publicacion';
+import { Publicacion } from 'src/app/models/publicacion';
 import Swal from "sweetalert2" 
 @Component({
   selector: 'app-producto',
