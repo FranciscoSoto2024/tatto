@@ -12,6 +12,7 @@ export class CrudService {
   private rutaCollection = 'publicaciones';
 
   constructor(
+    
     private firestore: AngularFirestore,
     private storage: AngularFireStorage
   ) {}
