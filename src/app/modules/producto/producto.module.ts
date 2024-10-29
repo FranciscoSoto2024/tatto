@@ -9,6 +9,8 @@ import { CardComponent } from './components/card/card.component';
 import { CardAlimentacionComponent } from './components/card-alimentacion/card-alimentacion.component';
 import { CarruselComponent } from './components/carrusel/carrusel.component';
 import { PublicacionComponent } from './pages/publicacion/publicacion.component';
+import { ContactoComponent } from './pages/contacto/contacto.component';
+import { ReactiveFormsModule } from '@angular/forms'; // Importa ReactiveFormsModule
 
 
 
@@ -18,16 +20,19 @@ import { PublicacionComponent } from './pages/publicacion/publicacion.component'
     CardComponent,
     CardAlimentacionComponent,
     CarruselComponent,
-    PublicacionComponent
+    PublicacionComponent,
+    ContactoComponent,
   ],
   imports: [
     CommonModule,
     ProductoRoutingModule,
+    ReactiveFormsModule,
   ],
   exports:[
     ProductoComponent,
     CardComponent,
     CardAlimentacionComponent,
+    ReactiveFormsModule,
   ],
 })
 export class ProductoModule { }

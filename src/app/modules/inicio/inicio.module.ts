@@ -13,12 +13,14 @@ import { CardComponent } from './components/card/card.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { TiposTattooComponent } from './components/tipos-tattoo/tipos-tattoo.component';
 
 @NgModule({
   declarations: [
     InicioComponent,
     CardComponent,
-    CarouselComponent
+    CarouselComponent,
+    TiposTattooComponent
   ],
   imports: [
     CommonModule,
