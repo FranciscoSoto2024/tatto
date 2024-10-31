@@ -8,6 +8,9 @@ import { Publicacion } from 'src/app/models/publicacion';
   styleUrls: ['./table.component.css']
 })
 export class TableComponent implements OnInit {
+agregarPublicacion() {
+throw new Error('Method not implemented.');
+}
   publicaciones: Publicacion[] = [];
 
   constructor(private crudService: CrudService) {}

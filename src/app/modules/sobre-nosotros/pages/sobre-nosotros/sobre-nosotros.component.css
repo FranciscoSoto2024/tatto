@@ -1,28 +1,28 @@
 .sobre-nosotros {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-  }
-  
-  .sobre-nosotros h2 {
-    font-size: 2rem;
-    max-width: 800px;
-    color: #333;
-    margin-bottom: 15px;
-  }
-  
-  .sobre-nosotros h3 {
-    font-size: 1.5rem;
-    max-width: 800px;
-    color: #333;
-    margin-top: 20px;
-  }
-  
-  .sobre-nosotros p {
-    font-size: 1rem;
-    color: #333;
-    line-height: 1.6;
-    margin-bottom: 15px;
-  }
-  
+  padding: 30px; /* Aumenta el padding para más espacio interno */
+  max-width: 900px; /* Aumenta el ancho máximo */
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9; /* Fondo ligeramente diferente para destacarlo */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+}
+
+.sobre-nosotros h2 {
+  font-size: 2.5rem; /* Aumenta el tamaño del título principal */
+  color: #333;
+  margin-bottom: 20px; /* Aumenta el margen inferior */
+}
+
+.sobre-nosotros h3 {
+  font-size: 2rem; /* Aumenta el tamaño del subtítulo */
+  color: #333;
+  margin-top: 25px; /* Aumenta el margen superior */
+}
+
+.sobre-nosotros p {
+  font-size: 1.1rem; /* Aumenta el tamaño de la fuente del párrafo */
+  color: #333;
+  line-height: 1.8; /* Aumenta el interlineado para mejor legibilidad */
+  margin-bottom: 20px; /* Aumenta el margen inferior */
+}

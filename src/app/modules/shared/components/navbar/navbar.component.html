@@ -1,38 +1,33 @@
 <mat-toolbar>
-  
 
-  <img src="../../../../../assets/Gaming (2).png" alt="">
+
+  <img src="../../../../../assets/LOGO.png" alt="">
   <!-- se van a mostrar cuando la pantalla sea mayor a 700px -->
   <!-- boton para la vista de inicio -->
   <!-- Botón para la vista de Inicio -->
-  <button id="menuProducto" mat-button routerLink="/inicio">Inicio</button>
+  <button id="inicio" mat-button routerLink="/inicio">Inicio</button>
 
   <!-- Menu desplegable -> PRODUCTOS -->
-  
-  <button  class="padder-button" mat-button routerLink="/contacto">Contacto</button>
-  <button class="padder-button" mat-button routerLink="/sobre-nosotros">Sobre nosotros</button>
 
-<!--Busqueda-->
+  <button id="contacto" class="padder-button" mat-button routerLink="/contacto">Contacto</button>
+  <button id="nosotros" class="padder-button" mat-button routerLink="/sobre-nosotros">Sobre nosotros</button>
 
-<div class="search">
-  <div class="input-container">
-    <input type="text" name="text" class="input" placeholder="search..." (input)="buscar($event)">
-    <span class="icon">
-      <svg width="19px" height="19px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-        <g id="SVGRepo_iconCarrier">
-          <path opacity="1" d="M14 5H20" stroke="#000" stroke-width="1.5" stroke-linecap="round"
-            stroke-linejoin="round"></path>
-          <path opacity="1" d="M14 8H17" stroke="#000" stroke-width="1.5" stroke-linecap="round"
-            stroke-linejoin="round"></path>
-          <path d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2" stroke="#000"
-            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
-          <path opacity="1" d="M22 22L20 20" stroke="#000" stroke-width="3.5" stroke-linecap="round"
-            stroke-linejoin="round"></path>
-        </g>
-      </svg>
-    </span>
+  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+  aria-controls="offcanvasTop" id="menuCanva">
+    <mat-icon>menu</mat-icon>
+</button>
+
+<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul>
+      <li routerLink="/inicio">Inicio</li>
+      <li routerLink="/contacto">contacto</li>
+      <li routerLink="/sobre-nosotros">Sobre nosotros</li>
+    </ul>
   </div>
 </div>
 
@@ -50,7 +45,8 @@
 
 
   <!--Label para modo oscuro-->
-  <label for="toggle" id="label_toggle"><i class="fa-solid fa-moon"></i></label>
-  <input type="checkbox" id="toggle" (click)="cambiarFondo()">
+  
+ <!-- <label for="toggle" id="label_toggle"><i class="fa-solid fa-moon"></i></label>
+  <input type="checkbox" id="toggle" (click)="cambiarFondo()"> -->
 
 </mat-toolbar>

@@ -2,16 +2,6 @@
     flex: 1 1 auto;
 }
 
-/*
-    1) aplica estilos generales segun margen o ancho de una pantalla
-    2) permiten
-    3)
-*/
-@media (min-width: 300px) and (max-width: 700px) {
-    mat-tollbar {
-        background-color: blue;
-    }
-}
 
 #menuinicio {
     display: none;
@@ -21,14 +11,6 @@
     display: none;
 }
 
-@media(min-width: 700px) {
-    mat-toolbar {
-        background-color: rgb(255, 0, 0);
-        display: flex;
-        justify-content: space-around;
-
-    }
-}
 
 #menuSecciones {
     display: none;
@@ -36,19 +18,13 @@
 
 img {
     width: 70px;
-    height: 60px;
+    height: 55px;
 }
 
 /* From Uiverse.io by boryanakrasteva */
-.search {
-    margin: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 
-.input-container{
+
+.input-container {
     margin: 0;
     display: flex;
     justify-content: center;
@@ -107,15 +83,55 @@ img {
     font-size: 1rem;
     border-radius: 5px;
     transition: background-color 0.3s;
-  }
-  
-  .btn-contacto:hover {
-    background-color: #000000;
-  }
+}
 
-  .padder-button{
+.btn-contacto:hover {
+    background-color: #000000;
+}
+
+.padder-button {
     padding-left: 19px;
     padding-right: 19px;
-  }
+}
 
-  
+@media(min-width: 300px) and (max-width:700px) {
+    .padder-button {
+        padding-left: 8%;
+        padding-right: 18%;
+
+        color: red;
+    }
+
+    #inicio{
+        display: none;
+    }
+
+    #contacto{
+        display: none;
+    }
+
+    #nosotros{
+        display: none;
+    }
+
+    mat-toolbar {
+        background-color: rgb(255, 0, 0);
+        display: flex;
+        justify-content: space-around;
+
+    }
+}
+
+@media(min-width: 700px){
+    #menuCanva{
+        display: none;
+        
+    }
+
+    mat-toolbar {
+        background-color: rgb(255, 0, 0);
+        display: flex;
+        justify-content: space-around;
+
+    }
+}

@@ -1,7 +1,7 @@
 export interface Tattoo {
     id: string;
     nombre: string;
-    estilo: string;
+    tipo: string;
     origen: string;
     edad: number;
     imagen: string;

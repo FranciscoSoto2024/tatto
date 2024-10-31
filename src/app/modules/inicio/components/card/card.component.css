@@ -1,5 +1,5 @@
-h2 {
-    color: white; /* Establece el color del texto del título en blanco. */
+h1 {
+    color: rgb(0, 0, 0); /* Establece el color del texto del título en blanco. */
     text-align: center; /* Centra el texto horizontalmente dentro de su contenedor. */
 }
 
@@ -85,13 +85,6 @@ p {
   }
 }
 
-@media (min-width: 400px) and (max-width: 700px) {
-  .contenido {
-    width: 100%; /* Para que ocupe todo el ancho en pantallas pequeñas */
-    min-height: 350px;
-  }
-}
-
 @media (min-width: 700px) {
   .contenido {
     min-height: 450px;
@@ -105,11 +98,13 @@ p {
       flex-direction: column; /* Coloca los elementos hijos (tarjetas) en una columna vertical. */
       align-items: center; /* Centra horizontalmente los elementos hijos dentro del contenedor. */
   }
+  h1 {
+    color: rgb(255, 255, 255); /* Establece el color del texto del título en blanco. */
+    text-align: center; /* Centra el texto horizontalmente dentro de su contenedor. */
+}.contenido {
+  width: 100%; /* Para que ocupe todo el ancho en pantallas pequeñas */
+  min-height: 350px;
 }
-
-
-@media (min-width: 700px) {
-  /* Los estilos dentro de este bloque se aplicarían para pantallas con un ancho mayor a 700px, pero está vacío, por lo que no tiene efecto actualmente. */
 }
 
 #boton {

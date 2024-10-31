@@ -1,22 +1,22 @@
 <div class="contacto-container">
-    <h2>Contacto</h2>
+    <h2>𝕮𝖔𝖓𝖙𝖆𝖈𝖙𝖔</h2>
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
       <div class="form-group">
-        <label for="nombre">Nombre</label>
+        <label for="nombre">𝕹𝖔𝖒𝖇𝖗𝖊</label>
         <input type="text" id="nombre" formControlName="nombre" placeholder="Tu nombre" />
       </div>
   
       <div class="form-group">
-        <label for="email">Email</label>
+        <label for="email">𝕰𝖒𝖆𝖎𝖑</label>
         <input type="email" id="email" formControlName="email" placeholder="Tu email" />
       </div>
   
       <div class="form-group">
-        <label for="mensaje">Mensaje</label>
+        <label for="mensaje">𝕸𝖊𝖓𝖘𝖆𝖏𝖊</label>
         <textarea id="mensaje" formControlName="mensaje" rows="5" placeholder="Tu mensaje"></textarea>
       </div>
   
-      <button type="submit" [disabled]="contactForm.invalid">Enviar</button>
+      <button type="submit" [disabled]="contactForm.invalid">𝕰𝖓𝖛𝖎𝖆𝖗</button>
     </form>
   </div>
   

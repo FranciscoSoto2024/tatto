@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./tipos-tattoo.component.css']
 })
 export class TiposTattooComponent {
+info: any;
 
 }
