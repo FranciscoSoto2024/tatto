@@ -163,7 +163,7 @@ export class CardComponent {
     origen: "",
     edad: 30,
     imagen: "https://i.pinimg.com/236x/32/a3/d2/32a3d21207d7cc0199b7228b4d9679b1.jpg",
-    descripcion: "El estilo Geek está dirigido a los amantes de la cultura “friki”. En este estilo se pueden encontrar diseños que incluyen personajes de videojuegos, símbolos de películas, referencias a series de manga y elementos relacionados con la ciencia ficción. Los tatuajes Geek son una forma de mostrar aficiones e intereses particulares de forma creativa..", 
+    descripcion: "El estilo Geek está dirigido a los amantes de la cultura “friki”. En este estilo se pueden encontrar diseños que incluyen personajes de videojuegos, símbolos de películas, referencias a series de manga y elementos relacionados con la ciencia ficción. Los tatuajes Geek son una forma de mostrar aficiones e intereses particulares de forma creativa.", 
     alt:"",
     ruta:"/"
     },
@@ -342,8 +342,263 @@ export class CardComponent {
     descripcion:"El tatuaje estilo graffiti se inspira en el arte urbano y la cultura del grafismo callejero. Este estilo se caracteriza por su uso audaz de colores vibrantes, líneas dinámicas y un enfoque libre y expresivo. Los diseños suelen incluir letras estilizadas, personajes caricaturescos, y elementos abstractos, reflejando la energía y creatividad de la cultura del graffiti. Los tatuajes en este estilo a menudo buscan transmitir un mensaje o una emoción, capturando la esencia del arte callejero en la piel de manera llamativa y única. Es popular entre quienes desean llevar un pedazo de la cultura urbana en su cuerpo.",
     alt:"",
     ruta:"/"
-}
-    
+  },
+  {
+    id: "31",
+  nombre:"Nordico",
+  tipo: "Ambas", 
+  origen: "",
+  edad: 1000,
+  imagen: "https://t2.uc.ltmcdn.com/es/posts/0/3/4/significado_de_los_tatuajes_vikingos_49430_600.jpg",
+  descripcion: "El estilo nórdico en tatuajes se inspira en las culturas vikingas y germánicas, destacándose por sus diseños simbólicos y complejos. Utiliza motivos como runas, dioses nórdicos, y elementos de la naturaleza, principalmente en blanco y negro con líneas gruesas. Cada tatuaje tiene un significado profundo relacionado con la vida, la muerte y la conexión ancestral. Aunque sus raíces son antiguas, ha resurgido en la cultura contemporánea, atrayendo a quienes se interesan por la mitología vikinga.", 
+  alt:"",
+  ruta:"/"
+  },
+
+  {
+    id: "32",
+  nombre:"Celestial",
+  tipo: "Parche", 
+  origen: "",
+  edad: 50,
+  imagen: "https://i.pinimg.com/736x/5f/1f/fe/5f1ffe4d1384069cfc262abdb936b025.jpg",
+  descripcion: "El estilo de tatuaje celestial se inspira en elementos del universo y la astrología, incluyendo astros como estrellas, lunas, planetas y constelaciones. Este estilo a menudo incorpora colores vibrantes y detalles etéreos, creando diseños que evocan una sensación de conexión con el cosmos, Los tatuajes celestiales pueden variar en complejidad, desde simples figuras de estrellas hasta elaboradas escenas cósmicas que incluyen galaxias y nebulosas.En términos de técnica, los artistas pueden emplear estilos como el realismo, el minimalismo o el watercolor, dependiendo de la visión del cliente.", 
+  alt:"",
+  ruta:""
+  },
+
+  {
+    id: "33",
+  nombre:"Botanico",
+  tipo: "Parche", 
+  origen: "",
+  edad: 20,
+  imagen: "https://i.pinimg.com/564x/d5/04/4d/d5044d9f883c3b5c8434aacb2181297b.jpg",
+  descripcion: "El estilo de tatuaje botánico se centra en representar plantas, flores y otros elementos de la naturaleza con gran detalle y realismo. Este estilo busca capturar la belleza y la delicadeza de las formas naturales, a menudo utilizando colores vibrantes y sombras sutiles para dar vida a los diseños. Los tatuajes botánicos pueden incluir una amplia variedad de flora, desde flores individuales hasta jardines enteros, así como hojas, ramas y raíces.", 
+  alt:"",
+  ruta:""
+  },
+  {
+    id: "34",
+  nombre:"Porcelana china",
+  tipo: "Parche", 
+  origen: "",
+  edad: 15,
+  imagen: "https://i.pinimg.com/originals/aa/69/9c/aa699cf0b0f99e8b2bc9bcedc84c2dd4.jpg",
+  descripcion: "El estilo de tatuaje de porcelana china se inspira en la estética de la cerámica china, conocida por sus delicados patrones en tonos azules y blancos. Este estilo imita la apariencia de la porcelana, incorporando motivos florales, paisajes y elementos ornamentales que reflejan la rica tradición del arte cerámico chino.", 
+  alt:"",
+  ruta:""
+  },
+  {
+    id: "35",
+  nombre:"Tiki polinesio",
+  tipo: "Bodysuit", 
+  origen: "",
+  edad: 40,
+  imagen: "https://cdntattoofilter.com/tattoo/312919/l.jpg",
+  descripcion: "El estilo de tatuaje tiki polinesio se inspira en la rica cultura y tradiciones de las islas del Pacífico, especialmente en Polinesia. Este estilo se caracteriza por sus intrincados diseños que incorporan símbolos, figuras y patrones tradicionales, muchos de los cuales tienen significados espirituales y culturales profundos.Los tatuajes tiki a menudo representan deidades, ancestros y elementos de la naturaleza, y suelen utilizar líneas gruesas y formas geométricas. Estos tatuajes no solo son decorativos, sino que también se consideran un medio para contar historias y transmitir valores culturales.En términos estéticos, los tatuajes tiki polinesios suelen cubrir grandes áreas del cuerpo, como brazos, piernas y espaldas, convirtiéndolos en obras de arte corporal completas aunque tambien puede haber tatuaje de este estilo del tamaño de un parche", 
+  alt:"",
+  ruta:""
+  },
+  {
+    id: "36",
+  nombre:"Poligonal",
+  tipo: "Parche", 
+  origen: "",
+  edad: 15,
+  imagen: "https://i.pinimg.com/736x/23/fe/ab/23feab78caa0bfa2aa9e2ecb160d9d92.jpg",
+  descripcion: "El estilo de tatuaje poligonal se caracteriza por el uso de formas geométricas y líneas angulares para crear diseños visualmente impactantes y contemporáneos. Este enfoque artístico transforma imágenes tradicionales en representaciones estilizadas, utilizando triángulos, cuadrados y otras formas para construir figuras abstractas o semi-realistas.", 
+  alt:"",
+  ruta:""
+  },
+  {
+    id: "37",
+  nombre:"Egipcio",
+  tipo: "Ambas", 
+  origen: "",
+  edad: 20,
+  imagen: "https://i.pinimg.com/originals/bb/b0/21/bbb0214416dcd844b0cee60c4f062496.jpg",
+  descripcion: "El estilo de tatuaje egipcio se inspira en la rica y antigua cultura de Egipto, incorporando símbolos, figuras y motivos que reflejan la mitología, el arte y la historia de esta civilización milenaria. Este estilo a menudo incluye representaciones de dioses y diosas egipcios, jeroglíficos, escarabajos sagrados y elementos arquitectónicos como pirámides y esfinges.Los tatuajes egipcios son conocidos por su diseño detallado y su uso de líneas definidas, a menudo en una paleta de colores que incluye negro, dorado y tonos terracota. Estos tatuajes no solo son decorativos, sino que también pueden llevar significados profundos, como la protección, la vida después de la muerte y la conexión con lo divino.", 
+  alt:"",
+  ruta:""
+  },
+  {
+    id: "38",
+  nombre:"Alquimico",
+  tipo: "Parche", 
+  origen: "",
+  edad: 15,
+  imagen: "https://cdntattoofilter.com/tattoo/338549/l.jpg",
+  descripcion: "El estilo de tatuaje alquímico se inspira en los principios y símbolos de la alquimia, una antigua práctica que combina filosofía, química y espiritualidad. Este estilo incorpora elementos como símbolos matemáticos, fórmulas, y figuras representativas de los cuatro elementos (tierra, aire, fuego y agua), así como la búsqueda de la transformación y la iluminación espiritual.",
+  alt:"",
+  ruta:""
+  },
+  {
+    id: "39",
+  nombre:"Esoterico",
+  tipo: "Parche", 
+  origen: "",
+  edad: 30,
+  imagen: "https://i.pinimg.com/originals/87/e8/8a/87e88a7ad7e7325529fdda0aa17f5134.jpg",
+  descripcion: "El estilo de tatuaje esotérico se caracteriza por el uso de símbolos y elementos que representan conceptos ocultos, místicos y espirituales. Este estilo a menudo incluye motivos como mandalas, símbolos astrológicos, runas, patrones sagrados y representaciones de deidades o entidades espirituales. Los diseños esotéricos buscan transmitir significados profundos y a menudo están conectados con la búsqueda del conocimiento oculto y la comprensión de lo desconocido.", 
+  alt:"",
+  ruta:""
+  },
+  {
+    id: "40",
+  nombre:"Psychedelic",
+  tipo: "Ambas", 
+  origen: "",
+  edad: 20,
+  imagen: "https://newmedia.10masters.com/images/espalda-color-peyote.max-1000x1000.format-webp.webp",
+  descripcion: "El estilo de tatuaje psicodélico se caracteriza por su uso vibrante de colores, formas abstractas y patrones intrincados que evocan una experiencia visual intensa. Inspirado en el arte psicodélico de los años 60 y 70, este estilo busca reflejar estados alterados de conciencia y experiencias sensoriales, a menudo asociadas con la música, la espiritualidad y la cultura de la contracultura.", 
+  alt:"",
+  ruta:""
+  },
+  {
+    id: "41",
+  nombre:"Mitologia griega",
+  tipo: "Ambas", 
+  origen: "",
+  edad: 30,
+  imagen: "https://i.pinimg.com/originals/49/5d/cc/495dccfbeeb0428e80f60ba5fccbe45c.jpg",
+  descripcion: "El estilo de tatuaje de mitología griega se inspira en las ricas historias, dioses, diosas y mitos de la antigua Grecia. Este estilo incluye representaciones artísticas de figuras mitológicas como Zeus, Atenea, Poseidón, y Hades, así como criaturas míticas como quimeras, centauros y sirenas. Los tatuajes pueden presentar escenas épicas, simbolismo y elementos que reflejan los valores y creencias de la cultura griega antigua.", 
+  alt:"",
+  ruta:""
+  },
+  {
+    id: "42",
+  nombre:"Arte renancentista",
+  tipo: "", 
+  origen: "Ambas",
+  edad: 30,
+  imagen: "https://i.pinimg.com/originals/ba/0d/25/ba0d255f76fb4ebac4a3b75314037469.jpg",
+  descripcion: "El estilo de tatuaje de arte renacentista se inspira en las obras maestras de la pintura y la escultura de la época renacentista, que floreció entre los siglos XIV y XVII en Europa. Este estilo se caracteriza por su enfoque en la belleza, la proporción y el realismo, capturando la esencia del arte de maestros como Leonardo da Vinci, Michelangelo y Raphael.", 
+  alt:"",
+  ruta:""
+  },
+  {
+    id: "43",
+  nombre:"Azteca",
+  tipo: "Ambas", 
+  origen: "",
+  edad: 30,
+  imagen: "https://i.pinimg.com/474x/22/7f/bf/227fbfb81a5324035cceca9871ad9f1e.jpg",
+  descripcion: "El estilo de tatuaje azteca se inspira en la rica cultura, mitología y simbolismo de la civilización azteca, que floreció en Mesoamérica entre los siglos XIV y XVI. Este estilo incluye representaciones de dioses, guerreros, animales sagrados, y símbolos geométricos que eran significativos en la cosmovisión azteca.Los tatuajes aztecas suelen presentar líneas gruesas y patrones intrincados, con un enfoque en la simetría y el detalle. Elementos como el sol, la serpiente de cascabel, el jaguar, y el dios Quetzalcóatl son comunes, y cada uno de estos símbolos tiene un significado cultural y espiritual profundo. Este estilo no solo es visualmente impactante, sino que también permite a los portadores conectar con su herencia cultural y expresar su identidad.", 
+  alt:"",
+  ruta:""
+  },
+  {
+    id: "44",
+  nombre:"Ilusiones opticas",
+  tipo: "Bodysuit", 
+  origen: "",
+  edad: 15,
+  imagen: "https://i.pinimg.com/564x/30/9c/4b/309c4bc3a988cb021ebb229b41d50213.jpg",
+  descripcion: "El estilo de tatuaje de ilusiones ópticas se caracteriza por el uso de diseños que juegan con la percepción visual, creando efectos tridimensionales y patrones que pueden parecer moverse o cambiar de forma a la vista. Este estilo utiliza principios de la geometría, el contraste y la perspectiva para desafiar la forma en que el cerebro interpreta las imágenes, lo que resulta en tatuajes que capturan la atención y provocan asombro.", 
+  alt:"",
+  ruta:"/"
+  },
+  {
+    id: "45",
+  nombre:"New school",
+  tipo: "Parche", 
+  origen: "",
+  edad: 30,
+  imagen: "https://avantgardetattoo.es/storage/2020/01/newschooltattoo-450x450.jpg",
+  descripcion: "Los tatuajes acuarela imitan el efecto de las pinturas acuarelas en la piel, con colores vibrantes y difuminados. Este estilo se caracteriza por su aspecto artístico y libre, como si el tatuaje fuese una obra de arte en sí misma. Los diseños acuarela suelen representar paisajes, flores, animales y objetos cotidianos, y requieren de un tatuador con habilidades en el manejo de la técnica de la acuarela.", 
+  alt:"",
+  ruta:"/"
+  },
+  {
+    id: "46",
+    nombre: "Cyberpunk",
+    tipo: "Parche",
+    origen: "",
+    edad: 30,
+    imagen: "https://i.pinimg.com/236x/17/10/4c/17104c5ef28b0b11a671fe9e4008f8be.jpg",
+    descripcion: "El estilo de tatuaje cyberpunk se inspira en la estética de la ciencia ficción y la cultura futurista, particularmente en el subgénero del cyberpunk que combina tecnología avanzada con un entorno urbano distópico. Este estilo se caracteriza por el uso de elementos visuales que evocan un mundo altamente tecnológico y digital, como circuitos, implantes cibernéticos, luces neón y paisajes urbanos futuristas.",
+    alt: "",
+    ruta: "/"
+},
+{
+    id: "47",
+    nombre: "Nikkei",
+    tipo: "Bodysuit",
+    origen: "",
+    edad: 20,
+    imagen: "https://i.pinimg.com/236x/d7/fc/77/d7fc77115e9b60832d24b27afd555096.jpg",
+    descripcion: "El estilo de tatuaje nikkei es una forma de arte que combina la estética del tatuaje tradicional japonés con elementos culturales y artísticos de la cultura occidental, específicamente de América Latina y otros lugares donde las comunidades nikkei (descendientes de japoneses) se han establecido. Este estilo busca rendir homenaje a la herencia cultural japonesa mientras incorpora influencias modernas y locales.",
+    alt: "",
+    ruta: "/"
+},
+{
+    id: "48",
+    nombre: "Origami",
+    tipo: "Parche",
+    origen: "",
+    edad: 15,
+    imagen: "https://i.pinimg.com/originals/2a/99/ee/2a99eee43dc88db73447590406f01951.jpg",
+    descripcion: "El estilo de tatuaje origami se inspira en el arte del plegado de papel japonés, conocido como origami. Este estilo se caracteriza por la representación de figuras y formas que evocan la estética del origami, utilizando líneas limpias, pliegues y patrones geométricos para crear imágenes que parecen tridimensionales y que juegan con la percepción visual.",
+    alt: "",
+    ruta: "/"
+},
+{
+    id: "49",
+    nombre: "Musical",
+    tipo: "Parche",
+    origen: "",
+    edad: 20,
+    imagen: "https://i.pinimg.com/736x/92/30/d5/9230d5ce62477621adcc8a2026473680.jpg",
+    descripcion: "El estilo de tatuaje musical se inspira en la música y su cultura, reflejando la pasión y el amor por este arte a través de una variedad de símbolos, imágenes y elementos relacionados con la música. Este estilo puede incluir representaciones de instrumentos musicales, notas, pentagramas, micrófonos, auriculares, discos de vinilo, y letras de canciones, entre otros",
+    alt: "",
+    ruta: "/"
+},
+{
+    id: "50",
+    nombre: "Logo",
+    tipo: "Parche",
+    origen: "",
+    edad: 20,
+    imagen: "https://i.pinimg.com/236x/b1/2f/19/b12f19ad363165dabe65048dda261dc7.jpg",
+    descripcion: "El estilo de tatuaje logo se caracteriza por la representación de logotipos icónicos de marcas, empresas, bandas musicales, películas, videojuegos y otros elementos de la cultura pop. Este estilo permite a los portadores expresar su lealtad, identidad y afinidad hacia una marca o una figura cultural específica, y a menudo se asocia con la nostalgia y la conexión emocional.",
+    alt: "",
+    ruta: "/"
+},
+{
+    id: "51",
+    nombre: "Deporte",
+    tipo: "Parche",
+    origen: "",
+    edad: 30,
+    imagen: "https://live.staticflickr.com/1551/24799993345_a293605e26_z.jpg",
+    descripcion: "El estilo de tatuaje deporte se inspira en la pasión por diversas actividades deportivas y se caracteriza por la representación de símbolos, logotipos, equipos, atletas, o elementos relacionados con diferentes deportes. Este estilo abarca una amplia gama de disciplinas, desde deportes de equipo como el fútbol, baloncesto y béisbol, hasta deportes individuales como el boxeo, el surf y el ciclismo.",
+    alt: "",
+    ruta: "/"
+},
+{
+    id: "52",
+    nombre: "Medieval",
+    tipo: "Ambos",
+    origen: "",
+    edad: 20,
+    imagen: "https://i.pinimg.com/474x/8b/6a/b1/8b6ab18e85dbb427bebc4a68e65af8e2.jpg",
+    descripcion: "El estilo Black and Grey es un tipo de tatuaje que utiliza únicamente tinta negra y grises, logrando un efecto de profundidad y sombreado a través de la dilución de la tinta. Este estilo es ideal para retratos, diseños realistas y escenas detalladas, ya que permite crear contrastes y gradientes suaves. Al centrarse en sombras y texturas, los tatuajes Black and Grey ofrecen un aspecto elegante y atemporal, y suelen ser menos propensos a desvanecerse en comparación con los tatuajes a color.",
+    alt: "",
+    ruta: "/"
+},
+{
+    id: "53",
+    nombre: "Mitologia Hindu",
+    tipo: "Ambos",
+    origen: "",
+    edad: 30,
+    imagen: "https://i.pinimg.com/736x/46/84/ba/4684ba83e85638fe56c443c519c36755.jpg",
+    descripcion: "El estilo de tatuaje indu (o hindu) se basa en la rica iconografía y la espiritualidad de la cultura hindú. Este estilo se caracteriza por la representación de dioses, deidades, símbolos sagrados y elementos de la mitología hindú. Los tatuajes pueden incluir figuras como Ganesha, Shiva, Durga, o el Om, así como patrones intrincados que reflejan la estética del arte hindú.",
+    alt: "",
+    ruta: "/"
+},
+
   ]
    }
 
