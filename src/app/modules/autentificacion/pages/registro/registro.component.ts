@@ -6,12 +6,10 @@ import { AuthService } from '../../services/auth.service';
 import { FirestoreService } from 'src/app/modules/shared/services/firestore.service';
 // importamos componente de rutas de angular
 import { Router } from '@angular/router';
-// Componente de encriptacion
-import * as cryptoJS from 'crypto-js';
-// Paqueteria de alertas personalizadas
+// componente de encriptación
+import * as CryptoJS from 'crypto-js';
+// paquetería de alertas personalizadas
 import Swal from 'sweetalert2';
-
-// ng add @angular/fire@16
 
 @Component({
   selector: 'app-registro',
@@ -28,7 +26,7 @@ export class RegistroComponent {
     nombre: '',
     apellido: '',
     email: '',
-    rol: '',
+    rol: 'vis', // -> todos los usuarios al registrarse serán "visitantes"
     password: ''
   }
 
@@ -44,16 +42,6 @@ export class RegistroComponent {
   // FUNCIÓN PARA EL REGISTRO DE NUEVOS USUARIOS
   async registrar(){
     // constante credenciales va a resguardar la información que ingrese el usuario
-    /* REGISTRO LOCAL
-    const credenciales = {
-      uid: this.usuarios.uid, // definimos al atributo de la interfaz con una variable local
-      nombre: this.usuarios.nombre,
-      apellido: this.usuarios.apellido,
-      email: this.usuarios.email,
-      rol: this.usuarios.rol,
-      password: this.usuarios.password
-    }*/
-
     // REGISTRO CON SERVICIO DE AUTH
     const credenciales = {
       email: this.usuarios.email,
@@ -64,8 +52,8 @@ export class RegistroComponent {
     // el método THEN es una promesa que devuelve el mismo valor si todo sale bien
     .then(res => {
       Swal.fire({
-        title: "Buen trabajo mijo!",
-        text: "Se pudo registrar con exito :D!",
+        title: "¡Buen trabajo!",
+        text: "¡Se pudo registrar con éxito! :)",
         icon: "success"
       });
 
@@ -75,8 +63,8 @@ export class RegistroComponent {
     // el método CATCH captura una falla y la vuelve un error cuando la promesa salga mal
     .catch(error => {
       Swal.fire({
-        title: "Oh no !",
-        text: "hubo un error al registrar un nuevo usuario :(!",
+        title: "¡Oh no!",
+        text: "Hubo un error al registrar un nuevo usuario :( \n"+error,
         icon: "error"
       });
     })
@@ -90,27 +78,15 @@ export class RegistroComponent {
     /**
      * SHA-256: Es un algoritmo de hash seguro que toma una entrada (en este caso la contraseña)
      * y produce una cadena de caracteres HEXADECIMAL que va a representar a su hash
-     * toString: convierte el resultado en la cadena de caracteres legible
+     * toString: Convierte el resultado en la cadena de caracteres legible
      */
-    this.usuarios.password = cryptoJS.SHA256(this.usuarios.password).toString();
+    this.usuarios.password = CryptoJS.SHA256(this.usuarios.password).toString();
 
     // Llamamos a la función guardUsuario()
     this.guardarUsuario();
 
     // Llamamos a la función limpiarInputs() para ejecutarla
     this.limpiarInputs();
-
-    // ########################## LOCAL
-    // Enviamos la nueva información como un NUEVO OBJETO a la colección de usuarios
-    // this.coleccionUsuarios.push(credenciales)
-
-    // Notificamos el éxito al registrarse para el usuario
-    // alert("¡Te registraste con éxito! :)");
-
-    // Mostramos credenciales por consola
-    // console.log(credenciales);
-    // console.log(this.coleccionUsuarios);
-    // ########################### FIN LOCAL
   }
 
   /* Función que accede a servicio FIRESTORE y envía la información 
@@ -137,7 +113,7 @@ export class RegistroComponent {
       nombre: this.usuarios.nombre = '',
       apellido: this.usuarios.apellido = '',
       email: this.usuarios.email = '',
-      rol: this.usuarios.rol = '',
+      rol: this.usuarios.rol = 'vis',
       password: this.usuarios.password = ''
     }
   }

@@ -17,7 +17,7 @@ export class PublicacionComponent implements OnInit {
   }
 
   obtenerPublicaciones(): void {
-    this.crudService.obtenerPublicaciones().subscribe((data: Publicacion[]) => {
+    this.crudService.obtenerProducto().subscribe((data: Publicacion[]) => {
       this.publicaciones = data;
     });
   }
