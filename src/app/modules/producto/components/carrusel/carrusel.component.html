@@ -5,7 +5,7 @@
               <div class="carousel-item active">
                 <img src="https://assets.elgourmet.com/wp-content/uploads/2023/03/milan_SuLEW9PUrTwyi0npoGIKD5zNqHmcAb.png" class="d-block w-100" alt="...">
               </div>
-              <div class="carousel-item" *ngFor="let producto of publicacionCarrusel">
+              <div class="carousel-item" *ngFor="let producto of productosCarrusel">
                 <img src="{{producto.imagen}}" class="d-block w-100" alt="{{producto.alt}}">
               </div>
             </div>
@@ -19,11 +19,9 @@
             </button>
           </div>
     </div>
+
     <div class="col">
-        <app-card
-        (publicacionAgregado)="publicacionAnadida($event)"
-        [publicacionReciente]="pub">
-        </app-card>    
-    </div>
+      <app-card (productoAgregado)="productoAnadido($event)" [productoReciente]="product"></app-card>
+  </div>
 </div>
 

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Producto } from 'src/app/models/producto';
 import { Publicacion } from 'src/app/models/publicacion';
 import Swal from "sweetalert2" 
 @Component({
@@ -10,18 +11,18 @@ export class ProductoComponent {
   pub:string = '';
 
   //Coleccion de productos añadidos a la fiesta
-  publicacionCarrusel: Publicacion[] = [];
+  productoCarrusel: Producto[] = [];
 
-  publicacionAnadida(publicacion:Publicacion){
+  ProductoAnadido(producto:Producto){
     //Remplazamos el valor de product
-    this.pub =  `${publicacion.idPublicacion} : $${publicacion.Numero}`;
+    this.pub =  `${producto.nombre} : $${producto.precio}`;
 
 
     try{
       /*Agregamos la informacion recibida
     por el parametro de la funcion a la coleccion
     del carrusel*/
-    this.publicacionCarrusel.push(publicacion);
+    this.productoCarrusel.push(producto);
 
     Swal.fire({
       title: '!Eso mi compa',

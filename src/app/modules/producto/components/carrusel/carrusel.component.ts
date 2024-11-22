@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Publicacion } from 'src/app/models/publicacion';
-import Swal from 'sweetalert2';
+import { Producto } from 'src/app/models/producto';
+import Swal from "sweetalert2";
 
 @Component({
   selector: 'app-carrusel',
@@ -8,29 +8,31 @@ import Swal from 'sweetalert2';
   styleUrls: ['./carrusel.component.css']
 })
 export class CarruselComponent {
-  pub:string = '';
+  //String que modificara el valor de @Input en el componente hijo 
+  product: string = '';
+  //Inicializado como tipo string y vacio
 
-  //Coleccion de productos añadidos a la fiesta
-  publicacionCarrusel: Publicacion[] = [];
+  //Coleccion de productos añadidos a la lista
+  productosCarrusel: Producto[] = [];
 
-  publicacionAnadida(publicacion:Publicacion){
-    //Remplazamos el valor de product
-    this.pub =  `${publicacion.idPublicacion} : $${publicacion.Numero}`;
+  productoAnadido(producto: Producto) {
 
+    //Reemplazamos el valor de product
+    this.product = `${producto.nombre} : $${producto.precio}`;
 
-    try{
+    try {
       /*Agregamos la informacion recibida
-    por el parametro de la funcion a la coleccion
-    del carrusel*/
-    this.publicacionCarrusel.push(publicacion);
+      por el parametro de la funcion a la colecccion
+      del carrusel*/
+      this.productosCarrusel.push(producto);
 
-    Swal.fire({
-      title: '!Eso mi compa',
-      text: 'Ha añadido el producto con exito',
-      icon: 'info'
-    })
+      Swal.fire({
+        title: '¡Muy bien!',
+        text: 'Ha añadido el producto con éxito.',
+        icon: 'info'
+      })
     }
-    catch(error){
+    catch (error) {
       Swal.fire({
         title: '¡Oh no!',
         text: 'Ha ocurrido un error\n'+error,
@@ -39,4 +41,3 @@ export class CarruselComponent {
     }
   }
 }
-

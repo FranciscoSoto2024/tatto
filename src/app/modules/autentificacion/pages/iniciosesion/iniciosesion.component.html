@@ -1,6 +1,7 @@
 <div class="container">
     <div class="row">
-        <h1>Inicia Sesión</h1>
+        <h1>𝕴𝖓𝖎𝖈𝖎𝖆 𝕾𝖊𝖘𝖎ó𝖓</h1>
+    
 
         <i class="material-icons" style="font-size: 200px;">person</i>
 
@@ -15,9 +16,14 @@
             <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
               <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
             </button>
-            <mat-hint align="start">Mínimo:6/{{input.value.length}}</mat-hint>
+            <mat-hint align="start">Mínimo:6/{{input.value.length}}
+                <li><a routerLink="/registro">¿𝕹𝖔 𝖙𝖎𝖊𝖓𝖊𝖘 𝖈𝖚𝖊𝖓𝖙𝖆?</a></li>
+            </mat-hint>
         </mat-form-field>
 
+        
+
         <button class="boton" mat-raised-button color="primary" (click)="iniciarSesion()">Iniciar Sesión</button>
+        
     </div>
 </div>

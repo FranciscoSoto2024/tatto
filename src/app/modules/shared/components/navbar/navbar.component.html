@@ -5,12 +5,13 @@
   <!-- se van a mostrar cuando la pantalla sea mayor a 700px -->
   <!-- boton para la vista de inicio -->
   <!-- Botón para la vista de Inicio -->
-  <button id="inicio" mat-button routerLink="/inicio">Inicio</button>
+  <button id="inicio" mat-button routerLink="/inicio">𝕴𝖓𝖎𝖈𝖎𝖔</button>
 
   <!-- Menu desplegable -> PRODUCTOS -->
 
-  <button id="contacto" class="padder-button" mat-button routerLink="/contacto">Contacto</button>
-  <button id="nosotros" class="padder-button" mat-button routerLink="/sobre-nosotros">Sobre nosotros</button>
+  <button id="contacto" class="padder-button" mat-button routerLink="/contacto">𝕮𝖔𝖓𝖙𝖆𝖈𝖙𝖔</button>
+  <button id="nosotros" class="padder-button" mat-button routerLink="/sobre-nosotros">𝕾𝖔𝖇𝖗𝖊 𝖓𝖔𝖘𝖔𝖙𝖗𝖔𝖘</button>
+  <button id="nosotros" class="padder-button" mat-button routerLink="/admin">𝕬𝖉𝖒𝖎𝖓</button>
 
   <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
   aria-controls="offcanvasTop" id="menuCanva">
@@ -19,14 +20,15 @@
 
 <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
+    <h5 class="offcanvas-title" id="offcanvasTopLabel">𝕺𝖕𝖈𝖎𝖔𝖓𝖊𝖘</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
     <ul>
-      <li routerLink="/inicio">Inicio</li>
-      <li routerLink="/contacto">contacto</li>
-      <li routerLink="/sobre-nosotros">Sobre nosotros</li>
+      <li routerLink="/inicio">𝕴𝖓𝖎𝖈𝖎𝖔</li>
+      <li routerLink="/contacto">𝕮𝖔𝖓𝖙𝖆𝖈𝖙𝖔</li>
+      <li routerLink="/sobre-nosotros">𝕾𝖔𝖇𝖗𝖊 𝖓𝖔𝖘𝖔𝖙𝖗𝖔𝖘</li>
+      <li routerLink="/admin">𝕬𝖉𝖒𝖎𝖓</li>
     </ul>
   </div>
 </div>
@@ -37,9 +39,9 @@
   <!-- menu desplegable para manejar todo el acceso de los -->
   <button mat-icon-button [matMenuTriggerFor]="usuario"><mat-icon>person</mat-icon></button>
   <mat-menu #usuario="matMenu">
-    <button mat-menu-item (click)="ingresar()" *ngIf="logueado" routerLink="/registro">Registrarse</button>
-    <button mat-menu-item (click)="ingresar()" *ngIf="logueado" routerLink="/inicio-sesion">Iniciar Sesión</button>
-    <button mat-menu-item (click)="cerrarSesion()" *ngIf="deslogueado">Cerrar Sesion</button>
+    <button mat-menu-item (click)="ingresar()" *ngIf="logueado" routerLink="/registro">𝕽𝖊𝖌𝖎𝖘𝖙𝖗𝖆𝖗𝖘𝖊</button>
+    <button mat-menu-item (click)="ingresar()" *ngIf="logueado" routerLink="/inicio-sesion">𝕴𝖓𝖎𝖈𝖎𝖆𝖗 𝕾𝖊𝖘𝖎𝖔𝖓</button>
+    <button mat-menu-item (click)="cerrarSesion()" *ngIf="deslogueado">𝕮𝖊𝖗𝖗𝖆𝖗 𝕾𝖊𝖘𝖎𝖔𝖓</button>
   </mat-menu>
 
 

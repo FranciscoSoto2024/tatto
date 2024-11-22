@@ -137,8 +137,8 @@ export class CardComponent {
     {
       id: "12",
     nombre:"Cyber-sigilism",
-    tipo: "", 
-    origen: "Parche",
+    tipo: "Ambas", 
+    origen: "",
     edad: 10,
     imagen: "https://i.pinimg.com/236x/78/29/44/782944b627627af1f288cb2eb1f17597.jpg",
     descripcion: "El Cyber Sigilism es un estilo de tatuaje futurista y vanguardista que fusiona elementos digitales, geométricos y esotéricos. Es una mezcla de ciberpunk y simbolismo místico, con un enfoque en formas abstractas, patrones complejos y líneas minimalistas, que evocan tecnología,el ciberespacio y los rituales simbólicos,suelen ser en tinta negra pero también se usan tonos vibrantes o neones", 
@@ -151,7 +151,7 @@ export class CardComponent {
     tipo: "Parche", 
     origen: "",
     edad: 25,
-    imagen: "https://zbcscrwjqlygjzrqvdcu.supabase.co/storage/v1/object/public/tattoox/faef744f-3a6c-4118-9930-a7915fd84b4c/c2e69011-368e-4129-b1b3-4c2fe8577527.image",
+    imagen: "https://images.squarespace-cdn.com/content/v1/61f6f914388acb6c7aaf8d6f/a0a6f44e-b2ae-442f-a862-fb69af72998a/Certified+Tattoo+Studios+-+Neo-traditional+tattoo-4.jpg",
     descripcion: "El tatuaje estilo neo tradicional es una evolución moderna del tatuaje tradicional, que combina elementos clásicos con detalles más elaborados y técnicas avanzadas. Se caracteriza por líneas audaces y bien definidas, similares a las del estilo tradicional, pero con mayor fluidez y dinamismo,Utiliza colores vibrantes incorporando degradados y sombras que aportan profundidad y volumen aspecto tridimensional.", 
     alt:"",
     ruta:""
@@ -469,7 +469,7 @@ export class CardComponent {
   {
     id: "42",
   nombre:"Arte renancentista",
-  tipo: "", 
+  tipo: "Parche", 
   origen: "Ambas",
   edad: 30,
   imagen: "https://i.pinimg.com/originals/ba/0d/25/ba0d255f76fb4ebac4a3b75314037469.jpg",
@@ -597,6 +597,17 @@ export class CardComponent {
     descripcion: "El estilo de tatuaje indu (o hindu) se basa en la rica iconografía y la espiritualidad de la cultura hindú. Este estilo se caracteriza por la representación de dioses, deidades, símbolos sagrados y elementos de la mitología hindú. Los tatuajes pueden incluir figuras como Ganesha, Shiva, Durga, o el Om, así como patrones intrincados que reflejan la estética del arte hindú.",
     alt: "",
     ruta: "/"
+},
+{
+  id: "54",
+  nombre: "Suminagashi",
+  tipo: "Bodysuit",
+  origen: "",
+  edad: 20,
+  imagen: "https://i.pinimg.com/736x/e6/4e/59/e64e597923b01e6a623ddd3303d684f1.jpg",
+  descripcion: "El estilo de tatuaje Suminagashi, inspirado en la técnica japonesa de marmoleado de tinta sobre agua, destaca por su estética fluida y abstracta, evocando patrones ondulados y acuáticos que parecen fluir y expandirse sobre la piel. Este arte, cuyo nombre significa literalmente tinta flotante, utiliza líneas delicadas y formas orgánicas que recuerdan las ondas en el agua o el movimiento del humo.",
+  alt: "",
+  ruta: "/"
 },
 
   ]

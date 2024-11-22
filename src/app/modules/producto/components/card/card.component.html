@@ -6,19 +6,19 @@
         <ul class="list-group">
           <h3>Ultima compra:</h3>
           <li class="list-group-item">
-            {{publicacionReciente}}
+            {{productoReciente}}
           </li>
         </ul>
       </div>
     </div>
   </div>
   <!--Card para mostrar TODOS los productos que el admin ingrese a la base de datos-->
-  <div class="col" *ngFor="let publicacion of coleccionPublicacion">
+  <div class="col" *ngFor="let publicacion of coleccionProductos">
     <div class="card" style="width: 18rem;">
       <img src="{{publicacion.imagen}}" class="card-img-top" alt="{{publicacion.alt}}">
       <div class="card-body">
         <h5 class="card-title">{{publicacion.imagen}}</h5>
-        <p class="card-text">{{publicacion.Numero}}</p>
+        <p class="card-text">{{publicacion.precio}}</p>
         ><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#verMas"
           (click)="mostrarVer(publicacion)">Ver mas</button>
       </div>
@@ -38,20 +38,20 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <img src="{{publicacionSeleccionado.imagen}}" alt="{{publicacionSeleccionado.Numero}}">
+        <img src="{{productoSeleccionado.imagen}}" alt="{{productoSeleccionado.precio}}">
 
         <div class="mb-3">
         </div>
 
         <div class="mb-3">
-          {{publicacionSeleccionado.Calificacion}}
-          {{publicacionSeleccionado.Comentario}}
+          {{productoSeleccionado.categoria}}
+          {{productoSeleccionado.descripcion}}
         </div>
 
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal"
-          (click)="agregarPublicacion(publicacionSeleccionado)">Agregar</button>
+          (click)="agregarProducto(productoSeleccionado)">Agregar</button>
         <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
       </div>
     </div>

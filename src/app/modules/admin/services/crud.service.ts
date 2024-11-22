@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Publicacion } from 'src/app/models/publicacion';
+import { Producto } from 'src/app/models/producto';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
 import { map } from 'rxjs';
 // Importaciones para manejo de archivos y referencias
@@ -18,7 +18,7 @@ import { getDownloadURL, getStorage, ref, UploadResult, uploadString, deleteObje
 })
 export class CrudService {
   // Definimos colección para los productos de la web
-  private productosCollection: AngularFirestoreCollection<Publicacion>
+  private productosCollection: AngularFirestoreCollection<Producto>
 
   // Definir variable "respuesta" que podrá subir resultados
   private respuesta!: UploadResult;
@@ -31,14 +31,14 @@ export class CrudService {
   }
 
   // CREAR productos -> obtiene datos del formulario y url de la imagen
-  crearProducto(producto: Publicacion, url: string){
+  crearProducto(producto: Producto, url: string){
     return new Promise(async(resolve, reject) => {
       try{
         // Creamos número identificativo para el producto en la base de datos
         const idProducto = this.database.createId();
 
         // Asignamos ID creado al atributo idProducto de la interfaz Producto
-        producto.idPublicacion = idProducto;
+        producto.idProducto = idProducto;
 
         // Asignamos URL recibida del parámetro al atributo "imagen" de interfaz Producto
         producto.imagen = url;
@@ -64,7 +64,7 @@ export class CrudService {
   }
 
   // EDITAR productos
-  modificarProducto(idProducto: string, nuevaData: Publicacion){
+  modificarProducto(idProducto: string, nuevaData: Producto){
     /*
       Accedemos a la colección "productos" de la Base de Datos, buscamos el ID del 
       producto seleccionado y lo actualizamos con el método "update", enviando la 

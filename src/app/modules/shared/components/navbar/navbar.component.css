@@ -21,7 +21,6 @@ img {
     height: 55px;
 }
 
-/* From Uiverse.io by boryanakrasteva */
 
 
 .input-container {
@@ -97,9 +96,9 @@ img {
 @media(min-width: 300px) and (max-width:700px) {
     .padder-button {
         padding-left: 8%;
-        padding-right: 18%;
+        padding-right: 20%;
 
-        color: red;
+        color: rgb(255, 0, 0);
     }
 
     #inicio{
@@ -118,7 +117,12 @@ img {
         background-color: rgb(255, 0, 0);
         display: flex;
         justify-content: space-around;
+        width: 700px;
 
+    }
+
+    .offcanvas{
+        height: 250px;
     }
 }
 
@@ -134,4 +138,6 @@ img {
         justify-content: space-around;
 
     }
+
+    
 }
