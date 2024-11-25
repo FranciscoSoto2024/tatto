@@ -13,6 +13,7 @@ import { environment } from 'src/environments/environment'; // vincula a la BD c
 import { AngularFireModule } from '@angular/fire/compat'; // trabaja con las colecciones de información
 import { AngularFireAuthModule } from '@angular/fire/compat/auth'; // trabaja con la autentificación
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { ProductosRopaComponent } from './inicio/components/productos-ropa/productos-ropa.component';
 // trabaja con imágenes y archivos
 
 /**
@@ -23,6 +24,7 @@ import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 @NgModule({
   declarations: [
     AppComponent,
+    ProductosRopaComponent,
   ],
   imports: [
     BrowserModule,

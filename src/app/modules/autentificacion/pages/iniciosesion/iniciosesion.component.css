@@ -9,3 +9,10 @@
     width: 120px;
     margin: auto;
 }
+@media (min-width: 300px) and (max-width: 700px) {
+    .boton {
+        width: 120px;
+        margin: auto;
+        margin-top: 25px; /* Ajusta este valor según sea necesario */
+    }
+}

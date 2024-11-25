@@ -37,4 +37,10 @@ button:disabled {
   cursor: not-allowed;
 }
 
+@media(min-width: 300px) and (max-width:700px) {
+  .contacto-container{
+      
+  }
+
+}
   
