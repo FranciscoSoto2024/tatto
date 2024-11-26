@@ -166,6 +166,7 @@ export class TableComponent {
       categoria: this.producto.value.categoria!,
       imagen: this.productoSeleccionado.imagen,
       alt: this.producto.value.alt!
+      
     }
 
     // Verificamos si el usuario ingresa o no una nueva imagen

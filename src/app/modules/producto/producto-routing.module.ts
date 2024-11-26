@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProductoComponent } from './pages/producto/producto.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { SobreNosotrosComponent } from '../sobre-nosotros/pages/sobre-nosotros/sobre-nosotros.component';
+import { ProductosropaComponent } from './pages/productosropa/productosropa.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path:"Sobrenosotros",component:SobreNosotrosComponent
   },
+  {
+    path:"productosropa",component:ProductosropaComponent
+  }
+ 
 ];
 
 @NgModule({

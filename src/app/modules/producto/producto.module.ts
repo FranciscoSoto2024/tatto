@@ -10,7 +10,7 @@ import { CardAlimentacionComponent } from './components/card-alimentacion/card-a
 import { CarruselComponent } from './components/carrusel/carrusel.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { ReactiveFormsModule } from '@angular/forms'; // Importa ReactiveFormsModule
-
+import { ProductosropaComponent } from './pages/productosropa/productosropa.component';
 
 
 @NgModule({
@@ -20,6 +20,7 @@ import { ReactiveFormsModule } from '@angular/forms'; // Importa ReactiveFormsMo
     CardAlimentacionComponent,
     CarruselComponent,
     ContactoComponent,
+    ProductosropaComponent
   ],
   imports: [
     CommonModule,

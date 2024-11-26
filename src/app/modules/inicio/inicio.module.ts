@@ -15,12 +15,13 @@ import {MatCardModule} from '@angular/material/card';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { TiposTattooComponent } from './components/tipos-tattoo/tipos-tattoo.component';
 
+
 @NgModule({
   declarations: [
     InicioComponent,
     CardComponent,
     CarouselComponent,
-    TiposTattooComponent
+    TiposTattooComponent,
   ],
   imports: [
     CommonModule,
@@ -32,7 +33,7 @@ import { TiposTattooComponent } from './components/tipos-tattoo/tipos-tattoo.com
     InicioComponent,
     CardComponent,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
   ]
 })
 export class InicioModule { }
